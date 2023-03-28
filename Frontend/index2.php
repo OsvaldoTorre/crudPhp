@@ -1,5 +1,5 @@
 <?php
-include_once("../Backend/Conexion/conexion.php");
+include("../Backend/Conexion/conexion.php");
 
 ?>
 <!DOCTYPE html>
