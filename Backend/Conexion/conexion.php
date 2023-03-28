@@ -1,9 +1,10 @@
 <?php
+
 class Conexion
 {
-    private static $conexionState = null;
+    public static $conexionState = null;
 
-    private function __construct($file = '../backend_settings.ini')
+    private function __construct($file = "../backend_settings.ini")
     {
         $settings = parse_ini_file($file, TRUE);
         try {
@@ -35,6 +36,7 @@ class Conexion
     public static function CerrarConexion()
     {
         mysqli_close(Conexion::$conexionState);
+        echo "Conexion cerrada";
     }
 
 }
